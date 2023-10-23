@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Univers Next W01";
+    src: url("/fonts/63aa74f9-a724-4074-85c7-4167c0448227.eot?#iefix");
+    src: url("/fonts/63aa74f9-a724-4074-85c7-4167c0448227.eot?#iefix")
+        format("eot"),
+      url("/fonts/97c0f83d-39ac-412b-9d8a-d98208c0ce8d.woff2") format("woff2"),
+      url("/fonts/fc09acb4-f628-4ba0-b648-d2ca30265b20.woff") format("woff"),
+      url("/fonts/3cb4004c-2eea-45d4-a0b5-7af6f817c451.ttf") format("truetype"),
+      url("/fonts/4d6ce461-aa11-472f-af6d-7466479534e1.svg#4d6ce461-aa11-472f-af6d-7466479534e1")
+        format("svg");
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  body {
+    font-family: "Univers Next W01_n7", "ST Heiti", "Heiti SC",
+      "Apple SD Gothic Neo", "Apple Gothic", SimHei, Dotum, sans;
+    @apply text-black bg-gray-100;
+  }
+}
+
+@layer components {
+  .px {
+    @apply px-[24px] md:px-[65px] xl:px-[95px];
+  }
+}
